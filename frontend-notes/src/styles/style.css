@@ -1,0 +1,133 @@
+@charset "UTF-8";
+:root {
+  --bgcolor: #D8D2C2;
+  --maincolor: #FAF7F0;
+  --headercolor: #000;
+  --fontcolor: #4A4947;
+  --secondcolor: #B17457;
+  --fontsize: 16px;
+  --descriptionfontsize: 20px;
+  --h1size: 46px;
+}
+
+@media (max-width: 750px) {
+  :root {
+    --bgcolor: #D8D2C2;
+    --maincolor: #FAF7F0;
+    --headercolor: #000;
+    --fontcolor: #4A4947;
+    --secondcolor: #B17457;
+    --fontsize: 14px;
+    --descriptionfontsize: 18px;
+    --h1size: 36px;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  background: var(--bgcolor);
+  color: var(--fontcolor);
+}
+
+#header {
+  text-align: center;
+}
+
+#title {
+  font-size: var(--h1size);
+  color: var(--headercolor);
+}
+
+#description {
+  font-size: var(--descriptionfontsize);
+  text-align: center;
+  position: relative;
+  top: -30px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: var(--secondcolor);
+}
+
+#form {
+  background: var(--maincolor);
+  padding: 2vh max(15vw, 50px);
+  margin: 0px 20vw 20px 20vw;
+  line-height: 1.75;
+  text-align: center;
+  font-size: var(--fontsize);
+  border-radius: 1.2%;
+}
+
+input {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--bgcolor);
+  color: var(--fontcolor);
+  border-color: var(--secondcolor);
+  padding: 6px 12px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#note {
+  border-style: solid;
+  border-color: var(--secondcolor);
+  border-radius: 2.5%;
+  margin: 4px;
+}
+
+@media (min-width: 1000px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 265px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #form {
+    margin: 0px 15vw 20px 15vw;
+  }
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-container button {
+  background: var(--maincolor);
+  border: 2px solid var(--secondcolor);
+  padding: 10px 20px;
+  font-size: var(--fontsize);
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.tab-container button.active,
+.tab-container button:hover {
+  background-color: var(--secondcolor);
+  color: white;
+}

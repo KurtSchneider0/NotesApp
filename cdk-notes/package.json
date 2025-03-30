@@ -1,0 +1,31 @@
+{
+  "name": "cdk-notes",
+  "version": "0.1.0",
+  "bin": {
+    "notes-app-stack": "bin/notes-app-stack.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.777.0",
+    "@aws-sdk/lib-dynamodb": "^3.777.0",
+    "aws-cdk": "^2.1006.0",
+    "aws-cdk-lib": "^2.186.0",
+    "aws-sdk": "^2.1692.0",
+    "constructs": "^10.4.2",
+    "source-map-support": "^0.5.16",
+    "uuid": "^11.1.0"
+  }
+}

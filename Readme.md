@@ -1,0 +1,1 @@
+Frontend und Backend für eine simple Notizen App
